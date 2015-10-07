@@ -1,0 +1,350 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+}
+
+body{
+	margin-top:0px;
+	padding: 0px;
+}
+
+h1{
+	text-align: center;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+h2{
+	text-align: center;
+}
+
+h3{
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+p{
+
+}
+table{
+	border-collapse: collapse; 
+}
+
+th{
+	padding: 10px;
+}
+
+td{
+	padding: 10px;
+}
+
+tr{
+	padding: 10px;
+	padding-bottom: 25px;
+}
+
+li a{
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+
+
+#wrapper{
+	padding: 0px;
+	width: 80%;
+	margin: 0px auto;
+	min-width: 784px;
+	overflow: hidden;
+}
+
+header{
+	text-align: center;
+	height: 200px;
+	padding: 0px;
+	
+	border-radius:2px;
+	border-bottom-left-radius: 0px;
+	margin: 0px;
+	
+}
+
+
+#fixH1{
+	display: block;
+	padding-top: 30px;
+}
+
+
+main{
+	float: left;
+
+	height: 100%;
+	width: 100%;
+
+	padding: 25px 50px;
+	margin: 0px 0px 50px 0px;	
+}
+
+
+
+nav{					/**the menu (nav) for the webpages**/
+	height: 36px;
+	width: 78%;
+	margin-bottom: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 169px;
+	margin: 0px;
+	min-width: 784px;
+}
+
+nav ul{
+	height: 100%;
+	padding: 0px;
+	margin: 5px 0px 0px 0px;	/*top margin*/
+
+}
+
+nav li{			/**targets the list inside the menu div**/
+	float: left;
+	list-style: none;
+	width: 20%;
+	font-size: 17px;
+}
+
+nav li a{		/**Targets the links inside the menu**/
+	padding: 1px 5% 1px 5%;
+	text-decoration: none;	/**gets rid of the ugly underline**/
+	font-weight: bold;
+	display: block;			/**so the link is not just on the text, but it is also around the text**/
+	margin: 0px 12% 0px 12%;		/**12%margin around the left and right side of the link**/
+
+	border-top-left-radius: 2px;	/**rounds the top corners**/
+	border-top-right-radius: 2px;	
+	border-bottom: 0px;	
+}
+
+nav li a:hover{
+
+	border-bottom: 0px;
+	border-radius: 2px;			/**rounds the corners**/
+
+
+}
+
+
+
+nav li a:active{
+
+	border-bottom: 0px;
+}
+
+nav li a.current{
+
+	border-bottom: 0px;
+
+}
+
+
+#centreBox{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+/**Home Page slide show***********************************************************************************************/
+#slideshow{
+	width: 450px;
+	float:left;
+	margin-top: 40px;
+}
+
+#slides{
+	height:270px;
+	position:relative;
+}
+
+.slide{
+	/**height: 350px;**/
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+
+	float: left;
+
+}
+
+#slideDescrption{
+	position: relative;
+	top: -30px;
+	height: 30px;
+
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#slides-controls{
+	width:100px;
+	height:20px;
+	margin: 0px auto;
+	padding:5px;
+	position: relative;
+	top: -30px;
+}
+
+#slides-controls a{
+	margin:5px;
+	width:8px;
+	height:8px;
+	border-radius:4px;
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	
+	-o-border-radius:4px;
+	
+	text-indent:-9000px;
+	display:block;
+	overflow:hidden;
+	float:left;
+}
+
+#rightText{
+	float:left;
+	padding: 20px 20px;
+	width: 40%;
+}
+
+
+/***********************Products page********************************************************************/
+
+.productBox{
+	width: 180px;
+	height: 290px;
+	
+	cursor: pointer;
+	
+	overflow: hidden;
+	
+	padding: 5px;
+	margin: 20px 20px;
+
+	float: left;
+	text-align: left;
+	transition: width 1s;
+}
+
+
+.productBox.clicked {
+    width: 460px;
+
+}
+
+.description{
+	margin-top: 20px;
+	visibility: hidden;
+	font-size: 0em;
+}
+
+.description.vis{
+	visibility: visible;
+	font-size: 1em;
+}
+
+.seeMore{
+	visibility: visible;
+	margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.seeMore.hid{
+	visibility: hidden;
+	margin: 0px;
+    font-size: 0px;
+    text-align: center;
+}
+
+/*************************About Us Page******************************************************************/
+
+#address{
+	float: right;
+	text-align: right;
+	width: 225px;
+	margin-right: 10%;
+}
+
+#pText{
+	float: left;
+	width: 57%;
+}
+
+
+
+/**************************Contact Page**********************************************************************/
+
+#contactButton{
+	width: 300px;
+	
+	margin: 20px 110px 30px 5px;
+	padding: 25px 0px;
+	
+	float: left;
+	text-align; center;
+}
+
+
+/*************************Useful Links Page******************************************************************/
+
+#links{
+	width: 200px;
+	height: 200px;
+	
+	padding: 5px;
+	margin: 20px 3%;
+
+	float: left;
+	text-align: center;
+}
+
+
+/*************************adminLogin page********************/
+#login{
+	width: 300px;
+	margin: 0px auto;
+
+}
+
+/************************CMS/ index.php*****************************/
+#loginSuccess{
+	width: 400px;
+	margin: 0 auto;
+	
+}
+
+#loginSuccess p{
+	text-align: center;
+	font-weight: bold;
+}
+
+#loginSuccess li {
+	font-weight: bold;
+	color: #4169E1; /**royal blue**/
+	display: block;
+	text-align: centre;
+}
+
+.linkPage td{
+	width: 100%;
+}
+
+.linkPage th{
+	width: 100%;
+}
